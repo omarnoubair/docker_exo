@@ -1,0 +1,22 @@
+#### Liste de commande ######
+1-2) création avec tag 
+      ==> docker build . -t exo1:1.0
+3) Exécuter une instance à partir de l'image en daemon (background)
+      ==>  docker run -d exo1:1.0
+4) vérifier le contenu du fichier cloner
+      ==> docker build . -t exo1:1.0
+output : 58ba4f31508dbda5ffa4f718b38c1bd0e4399d5e42fead9d651ab83234b10ec7
+5) afficher les images en cours d'exécution
+      * apartir de l'output précédent prendre les 3 premier charactère
+      ==> docker exec -it 58b sh (accède au conteneur & vérifier l'emplacement correct /var/www/tp )
+      ==> ls (vérifier l'existance du script copier et du directory du git)
+      ==> ls nom_du_directory_git
+6) lister les images disponible localement 
+      ==> docker images (au minimum 2 images : alpine + exo1)
+7) afficher les logs du conteneur 
+      ==> docker logs 58b
+8) stopper et supprimer l’instance
+      ==> docker stop 58b
+      ==> docker rm 58b
+9) supprimer l’image du repo local 
+      ==> docker rmi exo1:1.0

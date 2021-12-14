@@ -1,0 +1,18 @@
+Exo1
+
+Créer une image docker 
+en se basant sur une image alpine 
+installer Git et Curl a l’aide apk 
+créer et se positionner dans le répertoire /var/www/tp
+copier le script précédent
+définir le script précédent autant que point d’entrée.
+Tager l'image exo1:1.0
+Exécuter une instance à partir de l'image en daemon (background)
+vérifier le contenu du fichier cloner
+afficher les images en cours d'exécution
+lister les images disponible localement
+afficher les logs du conteneur
+stopper et supprimer l’instance
+supprimer l’image du repo local
+
+
