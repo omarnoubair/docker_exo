@@ -1,0 +1,17 @@
+Ecrire un fichier docker-compose.yml réunissant 2 services
+ - une application web (Dockerfile join)
+ - un serveur mysql avec les spec suivantes :
+        - se basé sur une image mysql:5.7
+        - créer un volume partagé sur /home/mysql pour persister la base de donnée
+
+L'application web exposera un endpoint unique '/'
+
+Accéder a l'application depuis votre navigateur et l'allimenter de quelque exemple
+
+identifier les adresses ip des conteneur à l'aide : docker inspect “image”
+
+Détruire le réseau créé 
+
+Relancer le réseau en faisant un nouveau build de l'image docker donnée
+
+Connectez vous a la base de donnée en ligne de commande et vérifier que les données existent toujours après la destruction

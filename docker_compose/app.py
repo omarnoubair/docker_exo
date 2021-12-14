@@ -7,7 +7,7 @@ cnx = mysql.connector.connect(
   host="db",
   user="root",
   password="password",
-  database="exo3"
+  database="docker_compose"
 )
 
 cur = cnx.cursor(buffered=True)

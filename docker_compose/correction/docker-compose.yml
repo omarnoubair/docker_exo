@@ -9,8 +9,9 @@ services:
     image: mysql:5.7
     environment:
       MYSQL_ROOT_PASSWORD: password
-      MYSQL_DATABASE: exo3
-
+      MYSQL_DATABASE: docker_compose
+    volumes:
+      - /home/mysql:/var/lib/mysql
   web:
     depends_on:
       - db

@@ -1,0 +1,9 @@
+docker-compose up -d
+docker-compose down
+docker-compose up -d --builde
+docker exec -it 09b bash
+mysql -u root -p   
+show databases;
+use docker_compose;
+show tables;
+select * from user;
