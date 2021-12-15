@@ -12,13 +12,14 @@ services:
       MYSQL_DATABASE: ${MYSQL_DATABASE}
     volumes:
       - /home/mysql:/var/lib/mysql
+
+
   web:
     depends_on:
       - db
     build:
       dockerfile: Dockerfile
       context: .
-    
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
