@@ -14,8 +14,9 @@ Détruire le réseau créé
 
 Relancer le réseau en faisant un nouveau build de l'image docker donnée
 
-Connectez vous a la base de donnée en ligne de commande et vérifier que les données existent toujours après la destruction
+Connectez vous a la base de donnée en ligne de commande et vérifier que les données existent toujours (dans la table user) après la destruction
 
 
 
-IMPOSTANT : Lors de la création du docker-compose, lisez bien le fichier app.py pour la connexion a la base de données
+RAPPEL : 
+     Lors de la création du docker-compose, lisez bien le fichier app.py pour la connexion a la base de données
