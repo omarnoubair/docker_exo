@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, jsonify
 import mysql.connector
+import os
 
 app = Flask(__name__)
 
 cnx = mysql.connector.connect(
-  host="db",
+  host=os.getenv('MYSQL_HOST'),
   user="root",
-  password="password",
-  database="docker_compose"
+  password=os.getenv('MYSQL_ROOT_PASSWORD'),
+  database=os.getenv('MYSQL_DATABASE')
 )
 
 cur = cnx.cursor(buffered=True)

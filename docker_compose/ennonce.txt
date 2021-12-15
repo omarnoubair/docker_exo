@@ -3,6 +3,7 @@ Ecrire un fichier docker-compose.yml réunissant 2 services
  - un serveur mysql avec les spec suivantes :
         - se basé sur une image mysql:5.7
         - créer un volume partagé sur /home/mysql pour persister la base de donnée
+ - Dans le fichier .env les variable d'environnement necessaire a vous de bien les utiliser
 
 L'application web exposera un endpoint unique '/'
 
