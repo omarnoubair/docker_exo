@@ -4,7 +4,8 @@ Ecrire un fichier docker-compose.yml réunissant 2 services
         - se basé sur une image mysql:5.7
         - créer un volume partagé sur /home/mysql pour persister la base de donnée
  - Dans le fichier .env les variable d'environnement necessaire a vous de bien les utiliser selon le conteneur
- PS : les valeurs des variables environnements peuvent changer selon votre utilisation & configuration 
+
+PS : les valeurs des variables environnements peuvent changer selon votre utilisation & configuration 
 
 L'application web exposera un endpoint unique '/'
 
@@ -17,3 +18,6 @@ Détruire le réseau créé
 Relancer le réseau en faisant un nouveau build de l'image docker donnée
 
 Connectez vous a la base de donnée en ligne de commande et vérifier que les données existent toujours (dans la table user) après la destruction
+
+Supplément : 
+- Créer un compte sur  docker hub et publier l'image buildé avec le dockerfile

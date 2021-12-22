@@ -7,3 +7,12 @@ show databases;
 use docker_compose;
 show tables;
 select * from user;
+
+
+
+for push on docker hub :
+
+docker login
+
+docker build -t <hub-user>/<repo-name>[:<tag>]
+docker push <hub-user>/<repo-name>[:<tag>]
